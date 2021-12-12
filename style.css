@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Nunito", sans-serif;
+  /* font-family: 'Nunito Sans', sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: papayawhip;
+}
+
+*::selection {
+  background-color: mediumseagreen;
+}
+
+#app {
+  text-align: left;
+  color: black;
+  width: 100%;
+  max-width: 1280px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0rem 1rem;
+  margin: auto;
+}
+
+#app h1 {
+  font-size: 12vw;
+  user-select: none;
+}
+
+#app .subheading {
+  font-size: 1.5rem;
+}
+
+#app h2 {
+  font-size: 2rem;
+}
+
+#app p {
+  font-size: 1.25rem;
+  max-width: 800px;
+}
+
+.text-section {
+  display: grid;
+  gap: 1rem;
+}
+
+#app a {
+  color: mediumseagreen;
+}
+
+#app a:visited {
+  color: mediumseagreen;
+}
+
+#app .chrome-button {
+  font-size: 1.25rem;
+  color: black;
+  text-decoration: none;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: mediumseagreen;
+  cursor: pointer;
+  font-weight: bold !important;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  box-shadow: 2.2px 2.2px 3.6px rgba(0, 0, 0, 0.024),
+    6px 6px 10px rgba(0, 0, 0, 0.035), 14.5px 14.5px 24.1px rgba(0, 0, 0, 0.046),
+    48px 48px 80px rgba(0, 0, 0, 0.07);
+}
+#app .chrome-button:visited {
+  font-size: 1.25rem;
+  color: black;
+  text-decoration: none;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: mediumseagreen;
+  cursor: pointer;
+  font-weight: bold !important;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  box-shadow: 2.2px 2.2px 3.6px rgba(0, 0, 0, 0.024),
+    6px 6px 10px rgba(0, 0, 0, 0.035), 14.5px 14.5px 24.1px rgba(0, 0, 0, 0.046),
+    48px 48px 80px rgba(0, 0, 0, 0.07);
+}
+
+#app .chrome-button:hover {
+  transform: scale(1.05);
+}
+
+#app img {
+  max-width: 800px;
+  padding: 1rem;
+  background-color: mediumseagreen;
+  box-shadow: 2.2px 2.2px 3.6px rgba(0, 0, 0, 0.024),
+    6px 6px 10px rgba(0, 0, 0, 0.035), 14.5px 14.5px 24.1px rgba(0, 0, 0, 0.046),
+    48px 48px 80px rgba(0, 0, 0, 0.07);
+}
+
+#app video {
+  max-width: 800px;
+  box-shadow: 2.2px 2.2px 3.6px rgba(0, 0, 0, 0.024),
+    6px 6px 10px rgba(0, 0, 0, 0.035), 14.5px 14.5px 24.1px rgba(0, 0, 0, 0.046),
+    48px 48px 80px rgba(0, 0, 0, 0.07);
+}
+
+#app ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+  max-width: 800px;
+  display: grid;
+  gap: 0.5rem;
+}
+
+#app ul li {
+  padding-left: 1rem;
+  text-indent: -0.7rem;
+}
+
+#app ul li::before {
+  content: "✅ ";
+}
+
+.button-background-outer {
+  position: relative;
+}
+
+.button-background::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.button-background:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.button-background::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: mediumseagreen;
+  z-index: -1;
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+
+.code {
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+}
+
+.cookie {
+  display: inline-block;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.cookie:hover {
+  transform: scale(1.5);
+}
