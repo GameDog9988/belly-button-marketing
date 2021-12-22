@@ -1,4 +1,4 @@
 # Belly Button Marketing Website
-Showcases my work and the experience I have in web development. 
+Marketing website for the Belly Button chrome extension 
 
-**Link to live verison [here](https://agrattan.com/)**
+**Link to live verison [here](https://getbellybutton.com/)**
